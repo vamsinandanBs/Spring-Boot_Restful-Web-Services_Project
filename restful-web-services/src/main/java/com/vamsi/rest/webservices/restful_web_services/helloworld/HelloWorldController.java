@@ -13,4 +13,11 @@ public class HelloWorldController {
     public String helloWorld(){
         return "Hi Checking Web Service";
     }
+
+    @GetMapping(path = "/Rest_Service_bean")
+    public helloWorldBean helloWorldBean(){
+
+        return new helloWorldBean("Hi Checking Web Service");
+    }
+
 }
